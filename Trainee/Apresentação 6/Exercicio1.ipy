@@ -1,0 +1,33 @@
+# Sistema de atribuição de nota simples no jupiterweb
+class NotaAluno:
+    def __init__(self, nome, idade, turma, nusp, nota):
+        self.nome = nome
+        self.idade = idade
+        self.turma = turma
+        self.nusp = nusp
+        self.nota = nota
+    
+    def atribuir_nota(self): # atribui nota no jupiterweb
+        if self.nota >= 5 and self.nota <= 10:
+            print("Aluno Aprovado")
+        elif self.nota < 5 and self.nota >= 3:
+            print("Aluno na reaval")
+        elif self.nota < 3 and self.nota > 0:
+            print("Aluno Reprovado")
+        else:
+            print("Nota atribuída invalida, atribua uma nota entre 0 e 10")
+    
+    def nota_reaval(self, nota_reaval):
+        nota_final = (self.nota + nota_reaval) / 2
+        if nota_final >= 5 and nota_final <= 10:
+            print("Aluno Aprovado na Reavaliação")
+        elif nota_final < 5 and nota_final > 0:
+            print("Aluno Reprovado na Reavaliação")
+        else:
+            print("Nota atribuída invalida, atribua uma nota entre 0 e 10")
+
+# Exemplo de uso
+felipe = NotaAluno(nome="Felipe", idade="24", turma="021", nusp="123456", nota=4.7)
+print(felipe.idade)
+felipe.atribuir_nota() # sobe a nota no jupiter web
+felipe.nota_reaval(5.9) # atribui a nota da reaval
