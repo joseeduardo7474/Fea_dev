@@ -1,4 +1,3 @@
 # Trainee_Fea_dev
- Projetos e exercícios do Trainee
- Testando as funcionalidades
- Novo teste
+ 	 Fea.dev é uma entidade estudantil da Faculdade de Administração, Economia e Contabilidade (Fea-USP)
+    focada em programação e mercado de trabalho.
